@@ -67,7 +67,7 @@ make
 Файлы с примерами можно найти в папке `assets/`.
 
 ### Пример 1:
-Входные данные (изображение `sample-5.bmp`, `64x64`):
+Входные данные (изображение `assets/sample-5.bmp`, `64x64`):
 
 <img src="./assets/preview/sample-5-preview.png" alt="Cute anime girl 64x64" width="450" />
 
@@ -144,7 +144,7 @@ make
 
 ### Пример 2:
 
-Входные данные (изображение `sample-7.bmp`, `64x64`):
+Входные данные (изображение `assets/sample-7.bmp`, `64x64`):
 
 <img src="./assets/preview/sample-7-preview.bmp" alt="Cute anime girl 64x64" width="450" />
 
@@ -221,7 +221,7 @@ make
 
 ### Пример 3:
 
-Входные данные (изображение `sample-8.bmp`, `64x68`):
+Входные данные (изображение `assets/sample-8.bmp`, `64x68`):
 
 <img src="./assets/preview/sample-8-preview.jpg" alt="Cute anime cat 64x68" width="450" />
 
@@ -302,7 +302,7 @@ make
 
 ### Пример 4:
 
-Входные данные (изображение `sample-9.bmp`, `100x40`):
+Входные данные (изображение `assets/sample-9.bmp`, `100x40`):
 
 <img src="./assets/preview/sample-9-preview.png" alt="Bunch of cute cats 100x40" height="300" />
 
@@ -354,7 +354,7 @@ r/^......(i......;<?.aB$$$$$$$@$$@p0r@@$L`[<^`~1^..!I...'..I!(l/`......}>......;
 
 ### Пример 5 (damn, we love it!):
 
-Входные данные (изображение `sample-6.bmp`, `44x77`):
+Входные данные (изображение `assets/sample-6.bmp`, `44x77`):
 
 <img src="./assets/preview/sample-6-preview.jpg" alt="F*ck 44x77" width="450" />
 
