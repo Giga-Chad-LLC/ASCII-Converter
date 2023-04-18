@@ -4,7 +4,7 @@ namespace ascii_converter {
 void BMPImage::read_from_file(const std::string &filename) {
     // Check that file is correctly opened
     if (!std::filesystem::exists(filename)) {
-        throw file_does_not_exist();
+        throw file_does_not_exist(filename);
     }
 
     std::ifstream is(filename, std::ios_base::in | std::ios_base::binary);
@@ -82,4 +82,15 @@ std::uint8_t BMPImage::get_padding_byte_count_per_row(
     return (4 - (byte_count_per_row % 4)) % 4;
 }
 
+std::uint32_t BMPImage::get_height() const {
+    return bmp_info_header.image_height;
+}
+
+std::uint32_t BMPImage::get_width() const {
+    return bmp_info_header.image_width;
+}
+
+std::uint32_t BMPImage::get_bytes_per_pixel() const {
+    return bmp_info_header.bit_count / 8;
+}
 }

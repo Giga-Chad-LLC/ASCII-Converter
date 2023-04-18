@@ -55,6 +55,9 @@ public:
     BMPImage() = default;
     void read_from_file(const std::string &filename) final;
     void write_to_file(const std::string &filename) final;
+    std::uint32_t get_height() const;
+    std::uint32_t get_width() const;
+    std::uint32_t get_bytes_per_pixel() const;
 };
 }  // namespace ascii_converter
 
