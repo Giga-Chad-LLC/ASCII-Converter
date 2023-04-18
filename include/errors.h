@@ -7,12 +7,12 @@
 
 namespace ascii_converter {
 struct missing_arguments : std::runtime_error {
-    explicit missing_arguments() : std::runtime_error("Missing arguments") {
+    explicit missing_arguments(const std::string use) : std::runtime_error("Missing arguments. Use: " + use) {
     }
 };
 
 struct file_does_not_exist : std::runtime_error {
-    explicit file_does_not_exist() : std::runtime_error("File does not exist") {
+    explicit file_does_not_exist(const std::string& filepath) : std::runtime_error("'" + filepath + "': file does not exist") {
     }
 };
 
