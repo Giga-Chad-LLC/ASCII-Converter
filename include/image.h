@@ -14,6 +14,7 @@ public:
     virtual void read_from_file(const std::string &filename) = 0;
     virtual void write_to_file(const std::string &filename) = 0;
     [[nodiscard]] std::string get_filename() const noexcept;
+    std::vector <std::uint8_t>& get_raw_data();
 
 protected:
     // NOLINTNEXTLINE
